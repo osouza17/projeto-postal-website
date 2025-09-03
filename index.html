@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>POSTAL - Fã Site</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/postal-logo1.webp" class="nav-img" loading="lazy" alt="Logo POSTAL">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-danger fw-bold rotacao-botao" aria-expanded="false">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-danger fw-bold">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-danger fw-bold">A-</button>
+                    <button id="alterna-contraste" class="btn btn-danger fw-bold"><i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo ao mundo insano de</h1>
+                    <img src="img/postal-logo.png" class="mb-3" width="563" height="278" loading="lazy" alt="Postal Banner">
+                    <a href="#historia" class="btn btn-danger btn-lg botao-inicio fw-semibold">Explorar!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="historia" class="my-5 pt-6 text-center" tabindex="0" aria-label="História da franquia POSTAL">
+    <div class="container d-flex flex-column align-items-center">
+        <img src="img/postal-1-cover.png" class="rounded-pill mb-4" width="1000" height="331" loading="lazy" alt="Capa Postal 1">
+        
+        <div class="col-lg-8">
+            <h2>A História de POSTAL</h2>
+            <p class="p-2">
+                A franquia <strong>POSTAL</strong>, criada pela <em>Running With Scissors</em>, é conhecida pelo seu humor negro, violência exagerada e sátira social. 
+                O primeiro jogo foi lançado em 1997, trazendo o personagem icônico <strong>Postal Dude</strong>. 
+                Desde então, a série virou cult, gerando continuações, mods, quadrinhos e até um filme. 
+                Amada por uns, odiada por outros, mas impossível de ignorar.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <section id="galeria" tabindex="0" aria-label="Galeria de imagens de POSTAL">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/postal2-screenshot.jpg" class="img-fluid rounded-5" loading="lazy" alt="Postal 2 gameplay">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/postal3-screenshot.jpg" class="img-fluid rounded-5" loading="lazy" alt="Postal 3 gameplay">
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/postal-redux.jpg" class="img-fluid rounded-5" loading="lazy" alt="Postal Redux">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/postal4-no-regerts.jpg" class="img-fluid rounded-5" loading="lazy" alt="Postal 4: No Regerts">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Siga a comunidade POSTAL:</p>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-discord"></i>
+        <i class="bi bi-twitter-x"></i>
+        <p class="mt-3">Fã site desenvolvido para a comunidade. Sem fins comerciais. Running With Scissors ©</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

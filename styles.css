@@ -1,0 +1,129 @@
+:root {
+    --vermelho-sangue: #b30000;
+    --preto: #000000;
+    --cinza-escuro: #1a1a1a;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ff0000;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrasmasht', sans-serif;
+    background-color: var(--cinza-escuro);
+    color: #fff;
+}
+
+header {
+    background-color: var(--preto);
+}
+
+.nav-link {
+    color: var(--vermelho-sangue);
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background-image: url('img/postalsteam.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+.botao-inicio {
+    background-color: var(--vermelho-sangue);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--vermelho-sangue);
+}
+
+#galeria {
+    background-color: var(--preto);
+}
+
+.formulario {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--vermelho-sangue);
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid var(--vermelho-sangue);
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-danger {
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
